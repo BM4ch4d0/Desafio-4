@@ -13,34 +13,40 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+  padding-bottom: 80px; 
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 ;
-  box-shadow: 5px 5px 10px gray;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-shadow: 5px 5px 10px gray;
+    width: 100%;
+    height: 70px;
 }
 
 #logo1 {
-    width: 180px;
+    width: 100px;
+    
 }
 
 header nav ul {
     display: flex;
-    gap: 4rem;
-    
+    justify-content: center;
+    gap: 18px;    
 }
 
 header nav ul li a {
     font-size: 24px;
     font-family: var(--fonte);
-    width: 400px;
     color: var(--cor-secundaria);
     text-decoration: none;
+    
 }
     
 
@@ -53,15 +59,15 @@ main {
 }
 
 #ranger {
-    padding-left: auto;
-    padding-right: auto;
-    width: 89%;
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto 0 auto;
 }
 
 main p {
-    font-size: 18px;
+    font-size: 15px;
     font-family: var(--fonte);
-    text-decoration: none;
 }
 
 footer {
@@ -74,6 +80,7 @@ footer {
 }
 
 footer p {
+    margin-left: 10px;
     font-size: 15px;
     font-family: var(--fonte);
     color: var(--cor-terciaria);
@@ -84,7 +91,12 @@ footer nav {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    gap: 36rem;
+    gap: 35rem;
+}
+
+#imagem {
+    display: flex;
+    padding: 0.2rem;
 }
 
 
