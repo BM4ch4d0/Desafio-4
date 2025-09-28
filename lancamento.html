@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Lançamento</title>
+    <link rel="stylesheet" href="/css/lancamento.css">
 </head>
 <body>
     <header>
@@ -19,30 +19,40 @@
         <div></div>
     </header>
     <main>
-        <div>
-            <iframe width="1317" height="741" src="https://www.youtube.com/embed/vQsryuNmsL0" title="Ford Ranger 2022 | Gerações" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <section class="comparison-section">
-            <img src="/img/XL Cabine.jpg" alt="Ford Ranger XL">  
-                <input type="checkbox" id="car1" name="car1" checked>
-                <label for="car1">
-                    <strong>XL Cabine Simples 2.2 Diesel 4X4 MT 2022</strong>
-                    <p>Preço Sugerido: R$ 183.850</p>
-                </label>
-            <img src="/img/xls 2.2 diesel.jpg" alt="Ford Ranger XLS">
-                <input type="checkbox" id="car2" name="car2">
-                <label for="car2">
-                    <strong>XLS 2.2 Diesel 4X4 AT 2022</strong>
-                    <p>Preço Sugerido: R$ 220.690</p>
-                </label>
-            <img src="/img/storm.jpg" alt="Ford Ranger Storm">
-                <input type="checkbox" id="car3" name="car3">
-                <label for="car3">
-                    <strong>Storm 3.2 Diesel 4X4 AT 2022</strong>
-                    <p>Preço Sugerido: R$ 222.790</p>
-                </label>
-            <button class="compare-btn">Comparar Carros</button>
+        <iframe src="https://www.youtube.com/embed/vQsryuNmsL0" title="Ford Ranger 2022 | Gerações" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section>
+            <div class="carros">
+                <img src="/img/XL Cabine.jpg" alt="Ford Ranger XL">
+                <div class="input"> 
+                    <input type="checkbox" id="carro1" name="carro1" checked>
+                    <label for="carro1">
+                        <strong>XL Cabine Simples 2.2 Diesel <br> 4X4 MT 2022</strong>
+                        <p>Preço Sugerido: R$ 183.850</p>
+                    </label>
+                </div> 
+            </div>
+            <div class="carros">
+                <img src="/img/xls 2.2 diesel.jpg" alt="Ford Ranger XLS">
+                <div class="input">
+                    <input type="checkbox" id="carro2" name="carro2">
+                    <label for="carro2">
+                        <strong>XLS 2.2 Diesel 4X4 AT 2022</strong>
+                        <p>Preço Sugerido: R$ 220.690</p>
+                    </label>
+                </div>
+            </div>    
+            <div class="carros">
+                <img src="/img/storm.jpg" alt="Ford Ranger Storm">
+                <div class="input">
+                    <input type="checkbox" id="carro3" name="carro3">
+                    <label for="carro3">
+                        <strong>Storm 3.2 Diesel 4X4 AT 2022</strong>
+                        <p>Preço Sugerido: R$ 222.790</p>
+                    </label>
+                </div>    
+            </div>
         </section>
+        <button id="compare">Comparar Carros</button>
     </main>
     <footer>
         <nav>
