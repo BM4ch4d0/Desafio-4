@@ -67,6 +67,12 @@ main {
     font-family: var(--fonte2);
 }
 
+main p {
+    margin-top: 0.5%;
+    font-size: 18px;
+    font-family: var(--fonte);
+}
+
 iframe {
     width: 100%;
     height: 450px;
