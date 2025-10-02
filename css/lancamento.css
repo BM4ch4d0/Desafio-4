@@ -36,7 +36,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1% 1% 1% 1%;
+    padding: 1%;
     box-shadow: 5px 5px 10px gray;
     width: 100%; 
 }
@@ -70,14 +70,19 @@ main {
 iframe {
     width: 100%;
     height: 450px;
-    /*max-width: 896px;
-    aspect-ratio: 16 / 9;*/
     border: none;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .tabela {
     display: flex;
-    gap: 10px;
+    gap: 2%;
     align-items: center;
 }
 
@@ -152,7 +157,32 @@ footer nav {
     height: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+ 
+    table, thead, tbody, th, td, tr, div {
+        display: block;
+    }
+
+    th, td {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .tabela {
+        justify-content: center;
+    }
 
     footer {
         padding: 20px; 
@@ -160,6 +190,22 @@ footer nav {
 
     footer nav {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;    
+        gap: 20px;
     }
+}
+
+
+@media (max-width: 480px) {
+
+    #logo1 { width: 80px; }
+    header nav ul li a { font-size: 20px; }
+
+    main p { font-size: 14px; }
+    .tabela { font-size: 14px; }
+    
+    #rodape { flex-direction: column; gap: 10px; }
+    footer p { text-align: center; }
+    #icones img { height: 35px; }
+    #logo2 { height: 35px; }
 }
